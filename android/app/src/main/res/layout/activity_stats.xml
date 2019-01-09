@@ -1,0 +1,148 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="oom.followdiet.Activities.StatsActivity">
+
+    <android.support.v4.widget.NestedScrollView
+        android:id="@+id/mainScrollView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/joursrespectes"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="20dp"
+                android:text="Jours respectés"
+                android:textSize="22sp" />
+
+            <TextView
+                android:id="@+id/joursrespectesv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="152dp"
+                android:text="0/0 jours"
+                android:textSize="20sp"
+                android:textStyle="bold" />
+
+            <com.txusballesteros.widgets.FitChart
+                android:id="@+id/fitchart1"
+                android:layout_width="200dp"
+                android:layout_height="200dp"
+                android:layout_below="@id/joursrespectes"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="20dp"
+                app:animationMode="overdraw"
+                app:backStrokeColor="#D3D3D3"
+                app:strokeSize="10dp"
+                app:valueStrokeColor="#4100e6" />
+
+            <android.support.v4.widget.NestedScrollView
+                android:id="@+id/mainScrollView2"
+                android:layout_width="match_parent"
+                android:layout_height="180dp"
+                android:layout_marginTop="10dp"
+                android:layout_below="@id/fitchart1">
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical"
+                    android:id="@+id/relative">
+
+                    <LinearLayout
+                        android:id="@+id/entete"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_centerHorizontal="true"
+                        android:layout_marginBottom="5dp"
+                        android:gravity="center_horizontal"
+                        android:orientation="horizontal">
+                        <TextView
+                            android:layout_width="0px"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:gravity="center"
+                            android:text="Date" />
+                        <TextView
+                            android:layout_width="0px"
+                            android:layout_height="wrap_content"
+                            android:gravity="center"
+                            android:text="Objectif atteint"
+                            android:layout_weight="1"
+                            />
+                    </LinearLayout>
+                </RelativeLayout>
+            </android.support.v4.widget.NestedScrollView>
+
+            <TextView
+                android:id="@+id/totalprot"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="10dp"
+                android:text="Total 0 gr de proteines -> rien"
+                android:textSize="18sp"
+                android:layout_below="@id/mainScrollView2"/>
+            <TextView
+                android:id="@+id/totalgluc"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="10dp"
+                android:text="Total 0 gr de glucides"
+                android:textSize="18sp"
+                android:layout_below="@id/totalprot"/>
+            <TextView
+                android:id="@+id/totallipid"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="10dp"
+                android:text="Total 0 gr de lipides"
+                android:textSize="18sp"
+                android:layout_below="@id/totalgluc"/>
+            <TextView
+                android:id="@+id/totalkcal"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="10dp"
+                android:text="Total 0 kcal"
+                android:textSize="18sp"
+                android:layout_below="@id/totallipid"/>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/totalkcal"
+                android:layout_centerHorizontal="true"
+                android:layout_marginBottom="20dp"
+                android:layout_marginTop="20dp"
+                android:gravity="center_horizontal"
+                android:orientation="horizontal">
+
+                <Button
+                    android:id="@+id/button9"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:width="140dp"
+                    android:onClick="on_clearhistory"
+                    android:text="🗑️ Nettoyer" />
+
+            </LinearLayout>
+
+        </RelativeLayout>
+    </android.support.v4.widget.NestedScrollView>
+
+
+</RelativeLayout>

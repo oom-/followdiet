@@ -1,0 +1,127 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Activities.FillerActivity">
+
+    <TextView
+        android:id="@+id/fillerdaylabel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="30dp"
+        android:text="01/01/1994" />
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignStart="@id/SpinnerNameFood"
+        android:layout_alignLeft="@id/SpinnerNameFood"
+        android:text="Nom"
+        android:layout_marginTop="40dp"
+        android:layout_below="@id/addFoodDay"
+        />
+
+    <Spinner
+        android:id="@+id/SpinnerNameFood"
+        android:layout_width="250dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/textView"
+        android:layout_centerHorizontal="true"
+         />
+
+    <LinearLayout
+        android:id="@+id/linearline1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/SpinnerNameFood"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="60dp"
+        android:gravity="center_horizontal"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="@dimen/default_stroke_size"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="Proteines:"
+            android:textAlignment="textEnd"
+            android:gravity="end"
+            android:paddingRight="45dp"
+            android:textSize="18sp"
+            android:textStyle="bold"
+             />
+        <TextView
+            android:id="@+id/valueprot"
+            android:layout_width="100dp"
+            android:layout_height="wrap_content"
+            android:text=""
+            android:layout_weight="1"
+            android:textSize="18sp"
+            />
+    </LinearLayout>
+    <LinearLayout
+        android:id="@+id/linearline2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/linearline1"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="20dp"
+        android:gravity="center_horizontal"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width= "@dimen/default_stroke_size"
+            android:layout_height="wrap_content"
+            android:textAlignment="textEnd"
+            android:gravity="end"
+            android:paddingRight="45dp"
+            android:text="Glucides:"
+            android:layout_weight="1"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            />
+        <TextView
+            android:id="@+id/valueglucid"
+            android:layout_width="100dp"
+            android:layout_height="wrap_content"
+            android:text=""
+            android:layout_weight="1"
+            android:textSize="18sp"
+            />
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/linearline2"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="20dp"
+        android:gravity="center_horizontal"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width= "@dimen/default_stroke_size"
+            android:layout_height="wrap_content"
+            android:textAlignment="textEnd"
+            android:gravity="end"
+            android:paddingRight="45dp"
+            android:text="Lipides:"
+            android:layout_weight="1"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            />
+        <TextView
+            android:id="@+id/valuelipids"
+            android:layout_width="100dp"
+            android:layout_height="wrap_content"
+            android:text=""
+            android:layout_weight="1"
+            android:textSize="18sp"
+            />
+    </LinearLayout>
+
+</RelativeLayout>

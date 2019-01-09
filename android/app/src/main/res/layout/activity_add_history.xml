@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Activities.AddHistoryActivity">
+
+    <TextView
+        android:id="@+id/addFoodDay"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="30dp"
+        android:text="01/01/1994" />
+
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignStart="@id/SpinnerNameFood"
+        android:layout_alignLeft="@id/SpinnerNameFood"
+        android:text="Nom"
+        android:layout_marginTop="40dp"
+        android:layout_below="@id/addFoodDay"
+        />
+
+    <Spinner
+        android:id="@+id/SpinnerNameFood"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/editText3"
+        android:layout_alignRight="@+id/editText3"
+        android:layout_below="@id/textView"
+        android:layout_width="0dp"
+        />
+
+    <TextView
+        android:id="@+id/textView4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/editText3"
+        android:layout_alignStart="@+id/editText3"
+        android:layout_below="@+id/SpinnerNameFood"
+        android:layout_marginTop="6pt"
+        android:text="Quantité" />
+
+    <EditText
+        android:id="@+id/editText3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/textView4"
+        android:ems="10"
+        android:layout_centerHorizontal="true"
+        android:inputType="numberDecimal" />
+
+
+    <TextView
+        android:id="@+id/textViewUnit"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_toEndOf="@id/editText3"
+        android:layout_alignTop="@id/editText3"
+        android:layout_marginTop="10dp"
+        android:text="unit"
+        android:layout_toRightOf="@id/editText3" />
+
+    <Button
+        android:id="@+id/button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/editText3"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="100dp"
+        android:onClick="on_savehistoryfood"
+        android:text="➕ Ajouter" />
+
+
+
+
+</RelativeLayout>
