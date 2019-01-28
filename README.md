@@ -1,5 +1,5 @@
 # Followdiet
-Une application Androide simple aidant au suivit de régime précis au gramme près.
+Une application Android simple aidant au suivit de régime précis au gramme près.
 
 ## Comment ça marche ?
 ### L'icône
