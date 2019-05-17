@@ -136,7 +136,7 @@ public final class History {
         objectivkcal = objectivkcal - (int)GetTodayTotalProteinsKcalConsumed(daykey);
         objectivkcal = objectivkcal - (int)GetTodayTotalCarbohydrateKcalConsumed(daykey);
         objectivkcal = objectivkcal - (int)GetTodayTotalLipidKcalConsumed(daykey);
-        return (objectivkcal <= 0 || (objectivkcal >= 0 && objectivkcal <= 10));
+        return (objectivkcal >= -10 && objectivkcal <= 0);
     }
 
     public static double GetTodayTotalProteinsKcalConsumed(String daykey)
